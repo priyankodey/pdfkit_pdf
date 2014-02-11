@@ -7,9 +7,9 @@ PDFKit.configure do |config|
  #config.wkhtmltopdf = Rails.root.join('vendor', 'bin', wkhtmltopdf_executable).to_s
 
 if Rails.env.staging? || Rails.env.production?
-  PDFKit.config = {:exe_path => Rails.root.join('bin', 'wkhtmltopdf-amd64').to_s}
+  config.wkhtmltopdf = {:exe_path => Rails.root.join('bin', 'wkhtmltopdf-amd64').to_s}
 else
-  PDFKit.config = { :exe_path => 'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'}
+  config.wkhtmltopdf = { :exe_path => 'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'}
 end
 
 
