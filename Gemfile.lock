@@ -129,4 +129,4 @@ DEPENDENCIES
   turbolinks (= 1.1.1)
   uglifier (= 2.1.1)
   wkhtmltopdf-binary (= 0.9.9.1)
-  wkhtmltopdf-heroku (= 1.0.0)
+  wkhtmltopdf-heroku
