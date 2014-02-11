@@ -16,7 +16,7 @@ gem 'turbolinks', '1.1.1'
 gem 'jbuilder', '1.0.2'
 gem 'pdfkit','0.5.2'
 gem 'wkhtmltopdf-binary','0.9.9.1'
-gem 'wkhtmltopdf-heroku'
+gem 'wkhtmltopdf-heroku','1.0.0'
 
 group :doc do
   gem 'sdoc', '0.3.20', require: false
