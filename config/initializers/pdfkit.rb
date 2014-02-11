@@ -5,6 +5,7 @@ PDFKit.configure do |config|
 
  # wkhtmltopdf_executable = 'wkhtmltopdf-amd64'
  #config.wkhtmltopdf = Rails.root.join('vendor', 'bin', wkhtmltopdf_executable).to_s
+config.default_options[:load_error_handling] = 'ignore'
 
 if Rails.env.staging? || Rails.env.production?
   config.wkhtmltopdf = {:exe_path => Rails.root.join('bin', 'wkhtmltopdf-amd64').to_s}
