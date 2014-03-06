@@ -19,7 +19,7 @@ body{
 
 @media print {
   body {
-    background-color: #FFF;
+    background-color: red;
   }
 
   #container {
@@ -35,5 +35,12 @@ body{
   
   #pdf_link {
     display: none;
+
   }
+}
+
+.page-break {
+  clear: both !important;
+  display: block !important;
+  page-break-before: always !important;
 }

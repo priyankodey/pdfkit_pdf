@@ -2,11 +2,22 @@
 <html>
 <head>
   <title>PdfkitPdf</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
 </head>
 <body>
+
+
+<div class="navbar navbar-fixed-top">
+   <div class="navbar-inner">
+     <div class="container">
+        
+       <%= render 'header' %>
+     </div>
+   </div>
+ </div>
+
+
 
 <%= yield %>
 
